@@ -1,0 +1,21 @@
+<h1><u>components</u></h1>
+<br>
+<div class="overview">  
+  <h3>Visão geral dos componentes</h3>
+  <p>
+    Os componentes são o bloco de construção principal para aplicações Angular. Cada componente consiste em:
+  </p>
+  <app-first-component></app-first-component>
+  <p>Para saber mais clique  <a href="https://angular.io/guide/component-overview">aqui</a></p>
+</div>
+<br>
+<div class="lifecycle-hooks">
+  <h3>Ciclo de vida dos componentes</h3>
+  <p>
+    Uma instância do componente tem um ciclo de vida que começa quando o Angular instancia a classe do componente e renderiza a visualização do componente junto com suas visualizações filhas. O ciclo de vida continua com a detecção de alterações, à medida que o Angular verifica quando as propriedades vinculadas aos dados mudam e atualiza a visualização e a instância do componente conforme necessário. O ciclo de vida termina quando o Angular destrói a instância do componente e remove seu modelo renderizado do DOM.
+  </p>
+  <p *ngIf="deletarCiclo">O componente "app-lifecycle-hooks" foi destruído.</p>
+  <app-lifecycle-hooks *ngIf="!deletarCiclo" [valorInicial]="valor"></app-lifecycle-hooks>
+  <button *ngIf="!deletarCiclo" (click)="mudarValor()">Mudar Valor</button>
+  <button *ngIf="!deletarCiclo" (click)="destruirCiclo()">Destruir Ciclo</button>
+</div>

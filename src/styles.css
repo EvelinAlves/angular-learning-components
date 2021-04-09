@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+body {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+a {
+    color: #053192;
+}
+
+
+button {
+    margin: 20px;
+}
